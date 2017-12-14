@@ -1,13 +1,20 @@
 package com.p1109.QA.Utill;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+
 import com.p1109.QA.BaseClass.Base_Or_Parent;
 
 public class TestUtil extends Base_Or_Parent
@@ -22,7 +29,9 @@ public class TestUtil extends Base_Or_Parent
 	static  Sheet sheet;
 
 
-	public static Object[][]getTestData(String sheetName)
+	//Use with  help of data provider in TestNG..!!
+
+	public static Object[][] getTestData(String sheetName)
 	{
 		FileInputStream file = null;
 		try {
@@ -62,10 +71,21 @@ public class TestUtil extends Base_Or_Parent
 	{
 		driver.switchTo().frame("");
 	}
+	
+	// To Capture screenShot
+	public void captureScreenShort()
+	{
 
+		try {
+			TakesScreenshot tc = (TakesScreenshot)driver;
+			File source =tc.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(source, new File("./ScreenShots/p1109.png"));
 
-
-
+			System.out.println("Screenshort taken");
+		} catch (Exception e) {
+			System.out.println("Exception while taking screenshort "+e.getMessage());
+		}
+	}
 
 
 

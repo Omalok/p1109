@@ -34,6 +34,7 @@ public class LoginPageTest extends Base_Or_Parent{
 	public void linkLoginPage()
 	{
 		landingPage.linkLoginPage();
+		testUtil.captureScreenShort();
 	} 
 
 	@Test(priority=2)		//(priority=1)
@@ -53,8 +54,9 @@ public class LoginPageTest extends Base_Or_Parent{
 	@Test(priority=3)
 	public void validLoginTest() throws Exception
 	{
-		homePage = loginPage.login("alok@gmail.com", "123456");
+		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
 		Thread.sleep(3000);
+		
 	}		
 	@AfterClass
 	public void tearDown() throws Exception

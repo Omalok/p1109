@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18218" started-at="2017-12-13T10:00:48Z" finished-at="2017-12-13T10:01:06Z">
+  <suite name="Default suite" duration-ms="16976" started-at="2017-12-14T13:11:11Z" finished-at="2017-12-14T13:11:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18218" started-at="2017-12-13T10:00:48Z" finished-at="2017-12-13T10:01:06Z">
+    <test name="Default test" duration-ms="16976" started-at="2017-12-14T13:11:11Z" finished-at="2017-12-14T13:11:28Z">
       <class name="com.p1109.QA.TestCase.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="setup" is-config="true" duration-ms="9431" started-at="2017-12-13T15:30:48Z" finished-at="2017-12-13T15:30:58Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.p1109.QA.TestCase.LoginPageTest@4ed9f0]" name="setup" is-config="true" duration-ms="7940" started-at="2017-12-14T18:41:11Z" finished-at="2017-12-14T18:41:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linkLoginPage()[pri:1, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="linkLoginPage" duration-ms="642" started-at="2017-12-13T15:30:58Z" finished-at="2017-12-13T15:30:58Z">
+        <test-method status="PASS" signature="linkLoginPage()[pri:1, instance:com.p1109.QA.TestCase.LoginPageTest@4ed9f0]" name="linkLoginPage" duration-ms="850" started-at="2017-12-14T18:41:19Z" finished-at="2017-12-14T18:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkLoginPage -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:2, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="loginPageTitleTest" duration-ms="15" started-at="2017-12-13T15:30:58Z" finished-at="2017-12-13T15:30:58Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:2, instance:com.p1109.QA.TestCase.LoginPageTest@4ed9f0]" name="loginPageTitleTest" duration-ms="11" started-at="2017-12-14T18:41:20Z" finished-at="2017-12-14T18:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="validLoginTest()[pri:3, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="validLoginTest" duration-ms="4535" started-at="2017-12-13T15:30:58Z" finished-at="2017-12-13T15:31:03Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:3, instance:com.p1109.QA.TestCase.LoginPageTest@4ed9f0]" name="validLoginTest" duration-ms="4429" started-at="2017-12-14T18:41:20Z" finished-at="2017-12-14T18:41:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="tearDown" is-config="true" duration-ms="3570" started-at="2017-12-13T15:31:03Z" finished-at="2017-12-13T15:31:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.p1109.QA.TestCase.LoginPageTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="3718" started-at="2017-12-14T18:41:25Z" finished-at="2017-12-14T18:41:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
