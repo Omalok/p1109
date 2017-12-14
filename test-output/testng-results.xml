@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18218" started-at="2017-12-13T10:00:48Z" finished-at="2017-12-13T10:01:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18218" started-at="2017-12-13T10:00:48Z" finished-at="2017-12-13T10:01:06Z">
+      <class name="com.p1109.QA.TestCase.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="setup" is-config="true" duration-ms="9431" started-at="2017-12-13T15:30:48Z" finished-at="2017-12-13T15:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="linkLoginPage()[pri:1, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="linkLoginPage" duration-ms="642" started-at="2017-12-13T15:30:58Z" finished-at="2017-12-13T15:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkLoginPage -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:2, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="loginPageTitleTest" duration-ms="15" started-at="2017-12-13T15:30:58Z" finished-at="2017-12-13T15:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="validLoginTest()[pri:3, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="validLoginTest" duration-ms="4535" started-at="2017-12-13T15:30:58Z" finished-at="2017-12-13T15:31:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.p1109.QA.TestCase.LoginPageTest@3bd550]" name="tearDown" is-config="true" duration-ms="3570" started-at="2017-12-13T15:31:03Z" finished-at="2017-12-13T15:31:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.p1109.QA.TestCase.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
