@@ -5,19 +5,19 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.p1109.QA.BaseClass.Base_Or_Parent;
-import com.p1109.QA.Pages.EditProfilePage;
+import com.p1109.QA.Pages.Sup_EditProfilePage;
 import com.p1109.QA.Pages.HomePage;
 import com.p1109.QA.Pages.LandingPage;
 import com.p1109.QA.Pages.LoginPage;
 import com.p1109.QA.Utill.TestUtil;
 
-public class EditProfilePageTest extends Base_Or_Parent{
+public class SupEditProfilePageTest extends Base_Or_Parent{
 	TestUtil testUtil;
 	LoginPage loginPage;
 	LandingPage landingPage;
-	EditProfilePage editProfilePage;
+	Sup_EditProfilePage editProfilePage;
 	HomePage homePage;
-	public EditProfilePageTest() 
+	public SupEditProfilePageTest() 
 	{
 		super();		
 	}	
@@ -29,7 +29,7 @@ public class EditProfilePageTest extends Base_Or_Parent{
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
 		landingPage = new LandingPage();
-		editProfilePage = new EditProfilePage();
+		editProfilePage = new Sup_EditProfilePage();
 	} 	
 	
 	@Test(priority=1)
@@ -47,11 +47,11 @@ public class EditProfilePageTest extends Base_Or_Parent{
 		editProfilePage=homePage.clickOnEditprofile();
 	}	
 	
-	@Test(priority=3)
+	/*@Test(priority=3)
 	public void editProfileTest()
 	{	
 		editProfilePage.EditProfileTest();
-	}
+	}*/
 	@AfterClass
 	public void tearDown() throws Exception
 	{		Thread.sleep(3000);

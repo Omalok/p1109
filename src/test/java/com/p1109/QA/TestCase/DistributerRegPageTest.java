@@ -1,5 +1,6 @@
 package com.p1109.QA.TestCase;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
@@ -7,20 +8,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.p1109.QA.BaseClass.Base_Or_Parent;
-import com.p1109.QA.Pages.DistributerPage;
+import com.p1109.QA.Pages.DistributerRegPage;
 import com.p1109.QA.Pages.LandingPage;
 import com.p1109.QA.Pages.LoginPage;
 import com.p1109.QA.Pages.RegisterPage;
 
 
-public class DistributerPageTest extends Base_Or_Parent{
+public class DistributerRegPageTest extends Base_Or_Parent{
 
-	DistributerPage distributerPage;
+	DistributerRegPage distributerPage;
 	RegisterPage RegisterPage;
 	LandingPage landingPage;
 	LoginPage loginPage;
 	
-	public DistributerPageTest()
+	public DistributerRegPageTest()
 	{
 		super();
 	}
@@ -28,13 +29,14 @@ public class DistributerPageTest extends Base_Or_Parent{
 	@BeforeMethod
 	public void setup()
 	{
+	
 		intialization();		
 		loginPage = new LoginPage();
-		distributerPage = new DistributerPage();
+		distributerPage = new DistributerRegPage();
 		RegisterPage = new RegisterPage();
 		landingPage = new LandingPage();
 		landingPage.linkRegisterPage();
-		distributerPage=RegisterPage.validRegistration("dabbu", "rawat", "dabbu12345678901141255@gmail.com", "123456", "123456");
+		distributerPage=RegisterPage.validRegistration("dabbu", "rawat", "dabbu1234567890114441557545@gmail.com", "123456", "123456");
 	}
 
 	@Test
@@ -47,11 +49,12 @@ public class DistributerPageTest extends Base_Or_Parent{
 		jse.executeScript("window.scrollBy(0,200)", ""); //Scroll
 		distributerPage.Select_country();
 		distributerPage.type_contact_number("8449611733");
+		distributerPage.uploadCompanyLogo();
 		distributerPage.typeFacebookLink("http:// www.facebook.com");
 		distributerPage.select_payment_method();
 		distributerPage.type_about_me("Hi, this is alok, currently working in panacea");
 		distributerPage.clickOnSaveChangesBtn();
-		
+		Thread.sleep(3000);
 	}
 
 	@AfterMethod

@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.p1109.QA.BaseClass.Base_Or_Parent;
-import com.p1109.QA.Pages.DistributerPage;
+import com.p1109.QA.Pages.DistributerRegPage;
 import com.p1109.QA.Pages.LandingPage;
 import com.p1109.QA.Pages.RegisterPage;
 
@@ -14,7 +14,7 @@ public class RegisterPageTest extends Base_Or_Parent
 {
 	LandingPage landingPage;
 	RegisterPage registerPage;
-	DistributerPage distributerPage;
+	DistributerRegPage distributerPage;
 	
 	public RegisterPageTest()
 	{

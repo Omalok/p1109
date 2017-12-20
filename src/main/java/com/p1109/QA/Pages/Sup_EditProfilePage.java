@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.p1109.QA.BaseClass.Base_Or_Parent;
 
-public class EditProfilePage extends Base_Or_Parent{
+public class Sup_EditProfilePage extends Base_Or_Parent{
 	
 	@FindBy(xpath="//input[@name='company_name']")
 	WebElement companyName;
@@ -26,7 +26,7 @@ public class EditProfilePage extends Base_Or_Parent{
 	WebElement aboutMe;
 	
 	
-	public EditProfilePage()
+	public Sup_EditProfilePage()
 	{
 		PageFactory.initElements(driver, this);		
 	}

@@ -39,7 +39,7 @@ public class HomePage extends Base_Or_Parent{
 	@FindBy(xpath="//a[@href='http://182.72.79.154/p1109/profile']")
 	WebElement LMprofile;
 	
-	@FindBy(xpath="//a[@href='http://182.72.79.154/p1109/update-profile']")
+	@FindBy(linkText="")
 	WebElement LMEditProfile;
 	
 	
@@ -56,13 +56,14 @@ public class HomePage extends Base_Or_Parent{
 	
 	public void goToMyProfileFromLM()
 	{
-		LMmyAccount.click();		
+		LMmyAccount.click();
+		
 	}
 	
-	public EditProfilePage clickOnEditprofile()
+	public Sup_EditProfilePage clickOnEditprofile()
 	{
 		 LMEditProfile.click();	
-		 return new EditProfilePage();
 		
+		return new Sup_EditProfilePage();
 	}
 }

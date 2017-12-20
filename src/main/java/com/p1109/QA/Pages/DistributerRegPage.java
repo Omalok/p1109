@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.p1109.QA.BaseClass.Base_Or_Parent;
 
-public class DistributerPage extends Base_Or_Parent{
+public class DistributerRegPage extends Base_Or_Parent{
 
 	@FindBy(xpath="html/body/section/div/div/div/div/div[1]/h1")
 	WebElement distributerPageLabel;
@@ -33,6 +33,9 @@ public class DistributerPage extends Base_Or_Parent{
 	@FindBy(xpath=".//*[@id='address1']")
 	WebElement address;
 	
+	@FindBy(xpath="//input[@name='company_logo']")
+	WebElement company_Logo;
+	
 	@FindBy(name="facebook_link")
 	WebElement facebook_link;
 	
@@ -47,7 +50,7 @@ public class DistributerPage extends Base_Or_Parent{
 	
 	@FindBy(xpath="//a[contains(text(), 'Cancel')]")
 	WebElement cancelbtn;
-	public DistributerPage()
+	public DistributerRegPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -91,6 +94,11 @@ public class DistributerPage extends Base_Or_Parent{
 		contact_number.sendKeys(contactnum);
 	}
 	
+	public void uploadCompanyLogo()
+	{
+		company_Logo.sendKeys("C:\\Users\\QA\\Desktop\\Test Images\\images.jpg");
+	}
+	
 	public void typeFacebookLink(String FBlink)  // FbLink
 	{
 		facebook_link.sendKeys(FBlink);
@@ -118,13 +126,14 @@ public class DistributerPage extends Base_Or_Parent{
 	
 	public LoginPage validDistributionInformation() throws Exception
 	{		
-		DistributerPage distributerPage = new DistributerPage();
+		DistributerRegPage distributerPage = new DistributerRegPage();
 		Thread.sleep(3000);
 		distributerPage.Select_gender();
 		distributerPage.type_company_name("Panacea");
 		jse.executeScript("window.scrollBy(0,200)", ""); //Scroll
 		distributerPage.Select_country();
 		distributerPage.type_contact_number("8449611733");
+		distributerPage.uploadCompanyLogo();
 		distributerPage.typeFacebookLink("http:// www.facebook.com");
 		distributerPage.select_payment_method();
 		distributerPage.type_about_me("Hello this is alok experienced in panacea");

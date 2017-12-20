@@ -71,7 +71,7 @@ public class RegisterPage extends Base_Or_Parent{
 		Registerbtn.click();
 	}
 
-	public DistributerPage validRegistration(String fname,String lname,String uemail, String pwd, String cnpwd)
+	public DistributerRegPage validRegistration(String fname,String lname,String uemail, String pwd, String cnpwd)
 	{
 		firstname.sendKeys(fname);
 		lastname.sendKeys(lname);
@@ -80,6 +80,6 @@ public class RegisterPage extends Base_Or_Parent{
 		confirmpassword.sendKeys(cnpwd);
 		jse.executeScript("window.scrollBy(0,250)", "");  //Scroll
 		Registerbtn.click();
-		return new DistributerPage();
+		return new DistributerRegPage();
 	}
 }

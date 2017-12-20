@@ -1,4 +1,4 @@
-package com.p1109.QA.Utill;
+package com.p1109.QA.SeleniumMethods;
 import org.openqa.selenium.By;
 
 import com.p1109.QA.BaseClass.Base_Or_Parent;
