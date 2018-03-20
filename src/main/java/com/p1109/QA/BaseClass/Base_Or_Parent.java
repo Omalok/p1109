@@ -56,7 +56,7 @@ public class Base_Or_Parent {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);// replace hardCoded value with class variable.
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		//driver.get("http://182.72.79.154/321p1106/verify-age");
+		//driver.get("http://someurl");
 		driver.get(prop.getProperty("url"));
 	}
 }
